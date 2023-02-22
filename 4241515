@@ -1,0 +1,51 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("BrainARK.wtf | Legends Of Speed", "BloodTheme")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Main")
+
+local Tab2 Window:NewTab("Credits")
+
+local Tab1S = Tab1:NewSection("Main")
+
+local Tab2S = Tab2:NewSection("Credits")
+
+Tab1S:NewButton("Auto Collect Orbs", "auto collects orbs", function()
+
+    while wait() do
+
+   game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb","Blue Orb","City")
+
+end
+
+end)
+
+Tab1S:NewButton("Auto Rebirth", "auto rebirths", function()
+
+    while wait() do
+
+   game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
+
+end
+
+end)
+
+Tab2S:NewButton("braincells.wtf", "script devloper and founder", function()
+
+    setclipboard("braincells.wtf#9296")
+
+end)
+
+Tab2S:NewButton("ARK", "gui devloper and python coder in learning", function()
+
+    setclipboard("ARK#8173")
+
+end)
+
+Tab2S:NewButton("discord server", "server I guess", function()
+
+    setclipboard("https://discord.gg/4ZCyZ6ME")
+
+end)
